@@ -1,0 +1,77 @@
+<style>
+.md h1, .md h2 { margin-top: 0px; }
+.md a:link { text-decoration: underline; }
+</style>
+**************************************
+* .       .  .----- .       .-. .-.  *
+* |       | |       |      |   |   | *
+* |   .   |  +----  |      |   '   | *
+* |   |   | |       |      |       | *
+*  '-' '-'   '-----  '---- '       ' *
+**************************************
+
+<center>
+    **<big>Workshop on Enormous Language Models</big>**
+   
+    *<big>Perspectives and Benchmarks</big>*
+    
+    <big>ICLR 2021</big>
+
+    <a href="#speakers">Speakers</a> | <a href="#call">Call for participation</a> | <a href="#schedule">Schedule</a> | <a href="#organizers">Organizers</a>
+</center>
+
+
+---
+
+Language models that have been trained on unlabeled text data are a cornerstone of modern natural language processing (NLP) research, and many recent state-of-the-art results in NLP were achieved by leveraging these self-supervised models.
+The success of this recipe is largely thanks to scalability: Better results can often be obtained by training larger models on larger amounts of unlabeled text data.
+This synergy is particularly fruitful thanks to the wide availability of unlabeled text data on the internet and the continual improvement of hardware accelerators for training machine learning models.
+Notable examples of models that make use of this scalability include [RoBERTa](https://arxiv.org/abs/1907.11692), which attained dramatically better performance simply by training for longer; [T5-11B](https://arxiv.org/abs/1910.10683), which achieved near-human performance on the challenging SuperGLUE benchmark by scaling to 11 billion parameters; [GShard](https://arxiv.org/abs/2006.16668), which produced a 600-billion parameter machine translation model that supports over 100 languages with state-of-the-art accuracy; and [GPT-3](https://arxiv.org/abs/2005.14165), which showed that scaling language models beyond 100 billion parameters could achieve strong performance on many tasks without any further task-specific training.
+Indeed, the "[scaling laws](https://arxiv.org/abs/2001.08361)" of these models demonstrate approximately log-linear improvements in performance over more than 6 orders of magnitude in parameter count.
+Naïve extrapolation of these trends suggests that a model with an additional 3-5 orders of magnitude of parameters would saturate performance on most current benchmarks.
+
+These results place our field at a crossroads.
+Will scaling lead to models that outperform humans on all text-based tasks, or are there limits to the scalability of these models?
+Should we focus on simply scaling these models, or should we design more sophisticated architectures and training schemes?
+Are there fundamental capabilities humans have but large language models lack, and do our current benchmarks test these capabilities?
+Does training on unstructured text from the web cause these models to inherit bias or memorize sensitive information?
+Is using this data legal or ethical?
+What can we learn from the fields of cognition, linguistics, and philosophy as we attempt to measure the “intelligence” of machines?
+The goal of this workshop is to find answers to these questions by inviting a diverse group of researchers to critically examine the state of giant language models.
+We also hope to provide concrete evidence of the capabilities and limitations of current enormous language models through a participant-driven benchmark.
+
+(#) <a id="speakers">Confirmed Speakers</a>
+
+![Emily Bender](https://linguistics.washington.edu/sites/linguistics/files/styles/portrait/public/photos/dsc_1715_2.jpg?itok=gjlfNgQ_&c=b887b2a46697059f776301ca3e75c319 width=150 height=150) ![Angelina <br /> McMillan-Major](https://pbs.twimg.com/profile_images/1329562307194621953/3Z3_u0QM_400x400.jpg width=150 height=150) ![Noam Shazeer](https://media-exp1.licdn.com/dms/image/C5603AQGvlDAkVQPzuA/profile-displayphoto-shrink_200_200/0/1592935200811?e=1614211200&v=beta&t=TRVCl40eDnnVpTJZsWADmK8nLNSC-Leyqw946OUNFso width=150 height=150) ![Yejin Choi](https://homes.cs.washington.edu/~yejin/portrait.jpg width=150 height=150)
+
+![Dario Amodei](https://cdn.twimlai.com/wp-content/uploads/2017/11/17172120/TWIMLAI_Background_800x800_75.jpg width=150 height=150) ![Mike Lewis](https://pbs.twimg.com/profile_images/1176581672122245120/trWklorg.jpg width=150 height=150) ![Alison Gopnik](https://psychology.berkeley.edu/sites/default/files/styles/300x300sc/public/people/gopnik_0.jpg?itok=hi_CW8Jn width=150 height=150) ![Emily Dinan](https://pbs.twimg.com/profile_images/1167082895036620800/p0FebjWq.jpg width=150 height=150)
+
+![Ariel Herbert-Voss](https://pbs.twimg.com/profile_images/1336813416296501248/bHz7YMY3.jpg width=150 height=150) ![Jesse Dodge](https://pbs.twimg.com/profile_images/1291443823579545600/PEAqNBvH_400x400.jpg width=150 height=150) ![Thomas Margoni](https://www.create.ac.uk/wp-content/uploads/2017/12/TMar-300x268.jpeg?x67940 width=150 height=150)
+
+(#) <a id="call">Call for participation</a>
+
+This workshop will have a non-standard submission format: Rather than submitting research papers, participants will be invited to contribute diverse tasks that they believe measure uniquely human or particularly challenging capabilities for large language models.
+Teams at Google and OpenAI have committed to evaluate this task set on their best-performing model architectures, across models spanning from tens of thousands through hundreds of billions or more of parameters.
+Researchers will also be invited to contribute and evaluate their own models on these tasks.
+We will analyze these experiments, and report the results at the workshop, with a particular focus on how model performance on different task types scales with model size.
+By inviting contributions of tasks or models, we provide a means for researchers to participate whether or not they have the (cost-prohibitive) computational resources to train giant language models.
+The end result will be a novel participant-driven benchmark testing the limits of giant language models.
+
+Find out more about the benchmark and participate [here](https://github.com/google/BIG-Bench).
+
+(#) <a id="schedule">Schedule</a>
+
+Coming soon!
+
+(#) <a id="organizers">Organizers</a>
+
+![Colin Raffel](https://pbs.twimg.com/profile_images/1046149372155555840/zSicyLgo.jpg width=150 height=150) ![Adam Roberts](https://pbs.twimg.com/profile_images/735306574952992768/yBkiualw.jpg width=150 height=150) ![Amanda Askell](https://pbs.twimg.com/profile_images/1335123848992182274/eQH_YnL5.jpg width=150 height=150) ![Daphne Ippolito](https://www.seas.upenn.edu/~daphnei/images/me.jpg width=150 height=150)
+![Ethan Dyer](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=LWeVRdUAAAAJ&citpid=1 width=150 height=150) ![Guy Gur-Ari](https://pbs.twimg.com/profile_images/1015380505611718657/6UEe7aAD.jpg width=150 height=150) ![Jared Kaplan](https://i1.rgstatic.net/ii/profile.image/272432485367826-1441964374787_Q512/Jared_Kaplan.jpg width=150 height=150) ![Jascha Sohl-Dickstein](https://images.squarespace-cdn.com/content/v1/53d19eeae4b0d2c0c0eb410e/1414361996432-837PS73PS2YIG69T0A9Q/ke17ZwdGBToddI8pDm48kJ8ipBOLehLHL08NLEymulVZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxW5-Ja9allzQqpNun71rMpfba2JykNybLUhCQ7QseE5VEJVQ4q8t36RwiLiXXov7I/Jascha_profile.png width=150 height=150)
+![Katherine Lee](https://media-exp1.licdn.com/dms/image/C5603AQHHlp0c7kX4BA/profile-displayphoto-shrink_200_200/0/1517423816942?e=1616025600&v=beta&t=Rb68vi8jV6NxbOUu7usKY4gTgzMqSvajrOuF9wolfvg width=150 height=150) ![Melanie Subbiah](https://csci.williams.edu/files/headshot-2-scaled.jpg width=150 height=150) ![Vedant Misra](https://pbs.twimg.com/profile_images/890675971182927876/wGrvSk_s_400x400.jpg width=150 height=150) ![Tom Brown](https://pbs.twimg.com/profile_images/1285266774267555840/LicLFbt3.jpg width=150 height=150)
+![Ambrose Slone](https://pbs.twimg.com/profile_images/1292681963728322563/hWRMCTBG_400x400.jpg width=150 height=150) ![Liam Fedus](https://pbs.twimg.com/profile_images/946842870916448256/X0_3p45X_400x400.jpg width=150 height=150) ![Daniel Freeman](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=t5Xsx0IAAAAJ&citpid=2 width=150 height=150) ![Aitor Lewkowycz](https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Yum1ah0AAAAJ&citpid=2 width=150 height=150)
+
+(#) Benchmark program committee
+
+(#) Advisory committee
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
