@@ -1,6 +1,10 @@
 <style>
 .md h1, .md h2 { margin-top: 0px; }
 .md a:link { text-decoration: underline; }
+[id^=toggle], [id^=toggle] + *{ display:none; }
+[id^=toggle]:checked + *{ display:block; }
+label { text-decoration: underline; font-size: 90%; }
+.speakerinfo { font-size: 85%; }
 </style>
 **************************************
 * .       .  .----- .       .-. .-.  *
@@ -60,22 +64,32 @@ Find out more about BIG Bench and participate [here](https://github.com/google/B
 (#) <a id="schedule">Schedule</a>
 
 Like all ICLR 2021 workshops, WELM will be held remotely.
-We are still in the process of determing the time zone and schedule specifics.
-Below is a tentative schedule that gives an idea of the overall structure of the workshop.
+We are still in the process of determing presentation formats and schedule specifics; please check back later for updates.
+All times listed below are in US Mountain Time (UTC-07:00).
 
 Time | Event
 -----|------
 8:45-9:00am | Opening remarks
-9:00-11:30am | Invited talks for speakers on panel #1
-11:30-11:45am | Break; encourage attendees to post questions for panel #1
-11:45am-12:30pm | Panel #1 on bias, safety, copyright, and efficiency
-12:30-1:00pm | Overview of BIG Bench results
-1:00-1:30pm | Lunch break
-1:30pm-2:00pm | Two contributed presentations by BIG Bench participants
-1:30-4:00pm | Invited talks for speakers on panel #2
-4:00-4:15pm | Break; encourage attendees to post questions for panel #2
-4:15-5:00pm | Panel #2 on extrapolating the abilities of giant language models
-5:00-5:15pm | Closing remarks
+9:00-9:30am | Invited talk by Thomas Margoni (<label for="toggle-margoni">details</label>)<input id="toggle-margoni" type="checkbox"><div class="speakerinfo">**Bio**: Thomas Margoni is Research Professor of Intellectual Property Law and a member of the Borad of Directors of the Centre for IT & IP Law (CiTiP), Faculty of Law, KU Leuven (BE). His work concentrates on international, comparative and EU copyright law applied to new technologies and he is an expert on [legal issues](http://eprints.gla.ac.uk/159231/13/159231.pdf) pertaining to training language models.
+9:30-10:00am | Invited talk by Jesse Dodge (<label for="toggle-dodge">details</label>)<input id="toggle-dodge" type="checkbox"><div class="speakerinfo">**Bio**: Jesse Dodge is a postdoctoral researcher at AllenAI who recently completed a PhD in Computer Science from Carnegie Mellon University. He has done extensive work into the [reproducibility](https://arxiv.org/abs/2002.06305) and [reporting](https://arxiv.org/abs/1909.03004) of research on giant language models, as well as the implications of their [energy and financial cost](https://arxiv.org/abs/1907.10597).
+10:00-10:30am | Invited talk by Emily M. Bender and Angelina McMillan-Major (<label for="toggle-bender-mcmillan-major">details</label>)<input id="toggle-bender-mcmillan-major" type="checkbox"><div class="speakerinfo">**Bio**: Emily M. Bender is a Professor of Linguistics at the University of Washington. Her research is focused on multilingual grammar engineering, the study of variation, both within and across languages, the relationship between linguistics and computational linguistics, and practical methods for promoting engagement with ethical issues in NLP. She coined the [Bender Rule](https://thegradient.pub/the-benderrule-on-naming-the-languages-we-study-and-why-it-matters/), co-created [Data Statements](https://www.mitpressjournals.org/doi/pdf/10.1162/tacl_a_00041), and is a co-author of the recent [Stochastic Parrots 🦜](https://dl.acm.org/doi/abs/10.1145/3442188.3445922) paper.<br />Angelina McMillan-Major is a PhD student in Computational Linguistics at the University of Washington. She is interested in methodologies for low-resource language documentation and revitalization, including machine learning methodologies, and thinking critically about the interaction between technology and language. She is a co-author of the recent [Stochastic Parrots 🦜](https://dl.acm.org/doi/abs/10.1145/3442188.3445922) paper.
+10:30-10:45am | Break to discuss talks and questions for panel #1
+10:45-11:15am | Invited talk by Ariel Herbert-Voss
+11:15-11:45am | Invited talk by Emily Dinan (<label for="toggle-dinan">details</label>)<input id="toggle-dinan" type="checkbox"><div class="speakerinfo">**Bio:** Emily Dinan is a research engineer at Facebook AI. She works mainly on dialogue systems and adversarial benchmarks to better measure their capabilities. Past work along these lines include the [Build it Break it Fix it](https://arxiv.org/abs/1908.06083) and [Adversarial NLI](https://arxiv.org/abs/1910.14599) benchmarks, research into [bias](https://arxiv.org/abs/1911.03842) and [other harmful behaviors](https://arxiv.org/abs/2010.07079) in dialogue models, and [open-source efforts to build large scale open-domain chatbots](https://arxiv.org/abs/2004.13637).</div>
+11:45-12:00pm | Break to discuss talks and questions for panel #1
+12:00-12:45pm | Panel #1: "Bias, safety, copyright, and efficiency" with Thomas Margoni, Jesse Dodge, Ariel Herbert-Voss, and Emily Dinan
+12:45-1:15pm | Overview of BIG Bench results
+1:15-1:45pm | Two contributed presentations by BIG Bench participants
+1:45-2:00pm | Spotlight presentations by BIG Bench participants
+2:00-2:30pm | Invited talk by Noam Shazeer (<label for="toggle-shazeer">details</label>)<input id="toggle-shazeer" type="checkbox"><div class="speakerinfo">**Bio**: Noam Shazeer is a principal software engineer at Google Brain. He has worked on large neural language models for many years, starting with work on training [giant recurrent neural network LMs](https://arxiv.org/abs/1602.02410), developing the [Mixture-of-Experts layer](https://arxiv.org/abs/1701.06538) to train 100+ billion parameter models; designing the [Transformer architecture](https://arxiv.org/abs/1706.03762), building the [Mesh-TensorFlow](https://arxiv.org/abs/1811.02084) and [GShard](https://arxiv.org/abs/2006.16668) libraries, and releasing the pre-trained [T5](https://arxiv.org/abs/1910.10683) model.
+2:30-3:00pm | Invited talk by Mike Lewis (<label for="toggle-lewis">details</label>)<input id="toggle-lewis" type="checkbox"><div class="speakerinfo">**Bio**: Mike Lewis is a research scientist at Facebook AI. He has worked on a diverse set of large language models, including the [RoBERTa](https://arxiv.org/abs/1907.11692) model that showed the importance of large-scale pre-training, the [BART](https://arxiv.org/abs/1910.13461) sequence-to-sequence model and its multilingual counterpart [mBART](https://arxiv.org/abs/2001.08210), and the [MARGE](https://arxiv.org/abs/2006.15020), [RAG](https://arxiv.org/abs/2005.11401), and [k-NN LM](https://openreview.net/forum?id=HklBjCEKvH) architectures that make use of a nonparametric memory.
+3:00-3:30pm | Invited talk by Dario Amodei (<label for="toggle-amodei">details</label>)<input id="toggle-amodei" type="checkbox"><div class="speakerinfo">**Bio**: Dario Amodei is the former director of research at OpenAI. He has been a driving force behind the investigation of [scaling laws](https://arxiv.org/abs/2001.08361) and their implications. These helped motivate the development of the [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) and [GPT-3](https://arxiv.org/abs/2005.14165) language models, which Dario led. He also plays a leading role in promoting [safety](https://arxiv.org/abs/1606.06565) research, with recent [work](https://arxiv.org/abs/2009.01325) including the alignment of language models using human feedback.
+3:30-3:45pm | Break to discuss talks and questions for panel #2
+3:45-4:15pm | Invited talk by Alison Gopnik (<label for="toggle-gopnik">details</label>)<input id="toggle-gopnik" type="checkbox"><div class="speakerinfo">**Bio**: Alison Gopnik is a Professor of Psychology, Affiliate Professor of Philosophy and member of the Berkeley Artificial Intelligence Research Group. Her research explores how young children come to know about the world around them. In particular, she researches how children build causal structure from patterns of data across physical, biological, and psychological domains.
+4:15-4:45pm | Invited talk by Yejin Choi
+4:45-5:00pm | Break to discuss talks and questions for panel #2
+5:00-5:45pm | Panel #2: "Extrapolating the abilities of giant language models" with Mike Lewis, Dario Amodei, Alison Gopnik, Yejin Choi, and Emily M. Bender
+5:45-6:00pm | Closing remarks
 
 (#) <a id="organizers">Organizers</a>
 
